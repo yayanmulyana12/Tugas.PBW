@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto py-10">
+      <div class="flex justify-center">
+        <div class="w-full max-w-md">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h4 class="text-center text-xl font-bold text-blue-600">
+              Form Penjualan
+            </h4>
+            <form>
+              <div class="mb-4">
+                <label class="block font-medium">Produk</label>
+                <input
+                  type="text"
+                  class="w-full p-2 border rounded"
+                  placeholder="Masukkan nama produk"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block font-medium">Jumlah</label>
+                <input
+                  type="number"
+                  class="w-full p-2 border rounded"
+                  placeholder="Masukkan jumlah"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block font-medium">Harga</label>
+                <input
+                  type="text"
+                  class="w-full p-2 border rounded"
+                  placeholder="Masukkan harga"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+              >
+                Tambahkan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <div class="w-full max-w-2xl">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h4 class="text-center text-xl font-bold text-blue-600">
+              Data Penjualan Bulanan
+            </h4>
+            <table class="w-full border-collapse border border-gray-300 mt-4">
+              <thead class="bg-blue-600 text-white">
+                <tr>
+                  <th class="border border-gray-300 p-2">No</th>
+                  <th class="border border-gray-300 p-2">Produk</th>
+                  <th class="border border-gray-300 p-2">Jumlah</th>
+                  <th class="border border-gray-300 p-2">Penjualan</th>
+                  <th class="border border-gray-300 p-2">Harga Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-gray-100">
+                  <td class="border border-gray-300 p-2 text-center">1</td>
+                  <td class="border border-gray-300 p-2 text-center">Gelas</td>
+                  <td class="border border-gray-300 p-2 text-center">2</td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 5.000
+                  </td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 10.000
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                  <td class="border border-gray-300 p-2 text-center">2</td>
+                  <td class="border border-gray-300 p-2 text-center">Piring</td>
+                  <td class="border border-gray-300 p-2 text-center">10</td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 50.000
+                  </td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 500.000
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="bg-gray-100 font-bold">
+                <tr>
+                  <td
+                    colspan="2"
+                    class="border border-gray-300 p-2 text-center"
+                  >
+                    Total Penjualan
+                  </td>
+                  <td class="border border-gray-300 p-2 text-center">12</td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 55.000
+                  </td>
+                  <td class="border border-gray-300 p-2 text-center">
+                    Rp 510.000
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
